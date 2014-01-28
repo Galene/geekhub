@@ -10,8 +10,8 @@ body.overlay {
 }
 #page,
 #main-wrapper,
-#main-menu-links li a.active,
-#main-menu-links li.active-trail a {
+/*#main-menu-links li a.active,
+#main-menu-links li.active-trail a */{
   background: #ffffff;
 }
 .tabs ul.primary li a.active {
@@ -22,7 +22,7 @@ body.overlay {
   border-bottom: 1px solid #ffffff;
 }
 #header {
-    background: url("images/header_bg.png") repeat-x scroll center -342px #FFFFFF;
+    background: url("/images/header_bg.png") repeat-x scroll center -342px #FFFFFF;
 
 /*
   background-color: #48a9e4;
