@@ -314,7 +314,7 @@ ul.tips {
 #name-and-slogan {
   float: left; /* LTR */
   padding-top: 34px;
-  margin: 0 0 30px 15px; /* LTR */
+  /*margin: 0 0 30px 15px; /* LTR */
 }
 #site-name {
   /*font-size: 1.821em;
@@ -501,14 +501,14 @@ h1#site-name {
     font-size: 14px;
     font-weight: bold;
     height: 16px;
-    padding: 14px 0 10px;
+    padding: 14px 8px 10px;
     text-transform: uppercase;
 /*
   color: #333;
   background: #ccc;
   background: rgba(255, 255, 255, 0.7);
   float: left; /* LTR */
-  height: 2.4em;
+  /*height: 2.4em;
   line-height: 2.4em;
   padding: 0 0.8em;
   text-decoration: none;
@@ -533,8 +533,8 @@ h1#site-name {
   background: rgba(255, 255, 255, 0.95);*/
 }
 #main-menu-links a:active {
-  background: #b3b3b3;
-  background: rgba(255, 255, 255, 1);
+  /*background: #b3b3b3;
+  background: rgba(255, 255, 255, 1);*/
 }
 #main-menu-links li a.active {
   border-bottom: none;
@@ -1830,4 +1830,45 @@ div.admin-panel .description {
 #footer-columns .region-footer-firstcolumn li{
     padding: 0 21px 0 0;
     width: auto;
+}
+.field-name-field-map {
+
+}
+.field-name-field-map .field-label{
+    color: #EB3580;
+    font-size: 27px;
+    font-weight: normal;
+    padding: 0 0 12px;
+    text-align: center;
+    width: 381px;
+}
+.field-name-field-phone .field-label,
+.field-name-field-e-mail .field-label{
+    color: #EB3580;
+    font-size: 27px;
+    font-weight: normal;
+    padding: 0 0 12px;
+    text-align: center;
+}
+.field-name-field-phone .field-items,
+.field-name-field-e-mail .field-items{
+    text-align: center;
+}
+.field-name-field-phone img,
+.field-name-field-e-mail img{
+    padding: 0 0 30px;
+    float: none;
+}
+
+.google-map-field {
+background-color: #E5E3DF;
+height: 287px;
+overflow: hidden;
+position: relative;
+width: 382px;
+    float: left;
+}
+
+.field-name-field-questions li{
+
 }
