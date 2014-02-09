@@ -35,14 +35,14 @@ body.overlay {
   background-image: linear-gradient(top, #0779bf 0%, #48a9e4 100%);*/
 }
 a {
-  color: #0071B3;
+  color: #E11D5D;
 }
 a:hover,
 a:focus {
-  color: #018fe2;
+  color: #E11D5D;
 }
 a:active {
-  color: #23aeff;
+  color: #E11D5D;
 }
 .sidebar .block {
   background-color: #f6f6f2;

@@ -15,11 +15,13 @@ body {
 a:link,
 a:visited {
   text-decoration: none;
+
 }
 a:hover,
 a:active,
 a:focus {
   text-decoration: underline;
+
 }
 h1,
 h2,
@@ -212,8 +214,10 @@ table tbody tr th {
 }
 tr td,
 tr th {
-  padding: 4px 9px;
-  border: 1px solid #fff;
+    padding: 24px 5px 24px 0;
+    width: 295px;
+/*  padding: 4px 9px;
+  border: 1px solid #fff;*/
   text-align: left; /* LTR */
 }
 #footer-wrapper tr td,
@@ -227,8 +231,11 @@ tr.odd {
 }
 tr,
 tr.even {
-  background: #efefef;
-  background: rgba(0, 0, 0, 0.063);
+    border-top: 1px solid #D2DCE1;
+    float: left;
+
+/*  background: #efefef;
+  background: rgba(0, 0, 0, 0.063);*/
 }
 table ul.links {
   margin: 0;
@@ -639,7 +646,7 @@ h1#page-title {
   color: #181818;
 }
 .node-teaser {
-  border-bottom: 1px solid #d3d7d9;
+/*  border-bottom: 1px solid #d3d7d9;*/
   margin-bottom: 30px;
   padding-bottom: 15px;
 }
@@ -705,6 +712,9 @@ h1#page-title {
     padding: 0 28px 1000px;
 }
 .field-name-field-photo img{
+    display: block;
+    float: left;
+    margin: 0 15px 0 0;
     padding: 0 20px 20px;
 
 }
@@ -1714,22 +1724,28 @@ div.admin-panel .description {
 .view-team3 {
     padding: 0 40px;
     }
-.view-team3 .views-row-odd{
+.view-team3 .views-row-odd,
+.teamcss .views-row-odd{
+    text-align: left;
+    /*height: 170px;*/
+    overflow: hidden;
+    padding: 0 0 15px;
+}
+.view-team3 .views-row-even,
+.teamcss .views-row-even{
     text-align: right;
     /*height: 170px;*/
     overflow: hidden;
     padding: 0 0 15px;
 }
-.view-team3 .views-row-even{
-    /*height: 170px;*/
-    overflow: hidden;
-    padding: 0 0 15px;
-}
 
-.views-row-odd .views-field-name{
+.views-row-odd .views-field-name,
+.views-row-odd .views-field-title{
     float: left;
+    text-align:right;
 }
-.views-field-name{
+.views-field-name,
+.views-field-title{
     color: #EA2778;
     float: right;
     font-family: "Trebuchet MS";
@@ -1739,23 +1755,25 @@ div.admin-panel .description {
     padding: 37px 0 7px;
     width: 185px;
     margin: 20px 0;
+    float: right;
+    text-align:left;
 }
-
 
 .views-row-odd .views-field-field-office{
     display: block;
+    text-align: left;
 }
 .views-field-field-office {
+    text-align: right;
     color: #F3753E;
     display: block;
     font-family: arial;
     font-size: 12px;
     font-weight: normal;
     line-height: 16px;
-    padding-top: 5px;
+    padding: 140px 0 0 -100px;
 
 }
-
 
 .views-row-odd .views-field-field-photo{
     display: block;
@@ -1767,7 +1785,6 @@ div.admin-panel .description {
     margin: 0 21px;
     }
 
-
 .views-row-odd .views-field-field-about{
     overflow: hidden;
     text-align: left;
@@ -1778,6 +1795,14 @@ div.admin-panel .description {
     overflow: hidden;
     padding: 40px 0 0;
     text-align: right;
+}
+.views-field .views-field-body p,
+.teamcss .views-field-body p{
+    font-size: 14px;
+    line-height: 20px;
+    overflow: hidden;
+    padding: 40px 0 0;
+
 }
 /*************Copyright***********/
 .region-footer-thirdcolumn {
