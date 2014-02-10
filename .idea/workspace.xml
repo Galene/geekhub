@@ -32,19 +32,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/bartik/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="644" column="19" selection-start="12392" selection-end="12392" vertical-scroll-proportion="0.0" vertical-offset="9393" max-vertical-offset="28560">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="15" selection-start="173" selection-end="173" vertical-scroll-proportion="0.121753246" vertical-offset="0" max-vertical-offset="616">
+            <state line="1768" column="0" selection-start="35294" selection-end="35294" vertical-scroll-proportion="0.67993367" vertical-offset="26110" max-vertical-offset="31110">
               <folding />
             </state>
           </provider>
@@ -129,12 +120,25 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/themes/bartik/css" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/themes/bartik/images" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -297,16 +301,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bartik/css/style.css">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="644" column="19" selection-start="12392" selection-end="12392" vertical-scroll-proportion="0.0" vertical-offset="9393" max-vertical-offset="28560">
+        <state line="5" column="15" selection-start="173" selection-end="173" vertical-scroll-proportion="0.121753246" vertical-offset="0" max-vertical-offset="616">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/themes/bartik/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="15" selection-start="173" selection-end="173" vertical-scroll-proportion="0.121753246" vertical-offset="0" max-vertical-offset="616">
+        <state line="1768" column="0" selection-start="35294" selection-end="35294" vertical-scroll-proportion="0.67993367" vertical-offset="26110" max-vertical-offset="31110">
           <folding />
         </state>
       </provider>
