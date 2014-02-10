@@ -12,9 +12,22 @@ body {
     font-family: Arial,sans-serif;
     font-size: 12px;
 }
+.front #page {
+    background: #FFFFFF url("/sites/default/files/header_bg.png") repeat-x top !important;
+}
+#page {
+    background: url("/sites/default/files/header_bg.png") repeat-x scroll center -342px #FFFFFF;
+    z-index: -1;
+}
+#page #main-menu-links li.active a {
+    background: url("/sites/default/files//inner_active.png") no-repeat scroll center bottom rgba(0, 0, 0, 0);
+    min-width: 46px;
+    text-align: center;
+}
 a:link,
 a:visited {
   text-decoration: none;
+    z-index: 1;
 
 }
 a:hover,
@@ -316,7 +329,7 @@ ul.tips {
 }
 #logo {
   float: left; /* LTR */
-  padding: 15px 15px 15px 10px; /* LTR */
+  padding: 19px 0 15px 29px; /* LTR */
 }
 #name-and-slogan {
   float: left; /* LTR */
@@ -330,7 +343,7 @@ ul.tips {
     display: block;
     height: 71px;
     text-indent: -2000px;
-    width: 130px;
+    width: 120px;
 }
 h1#site-name {
   margin: 0;
@@ -348,7 +361,7 @@ h1#site-name {
 .region-header .block {
   font-size: 0.857em;
   float: left; /* LTR */
-  margin: 0 10px;
+  margin: 0 0 0 15px;
   padding: 0;
 }
 .region-header .block .content {
@@ -2021,6 +2034,26 @@ width: 382px;
 }
 
 /************ main teaser ****************/
+.front #page h1#page-title {
+    color: #246685;
+    background: url("/sites/default/files/splash.png")  no-repeat bottom center !important;;
+    border-top: 1px solid #8EA8B3;
+    font-family: "Trebuchet MS";
+    font-size: 36px;
+    font-weight: normal;
+    padding: 73px 0 144px 0;
+    margin: 0 15px;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+/*img {
+    display: block;
+    left: 315px;
+    position: absolute;
+    top: 165px;
+    z-index: 1;
+}*/
 #content .node-teaser {
     position:relative;
 }
@@ -2251,3 +2284,4 @@ body.node-type-details .field-name-field-questions li {
 .region-header li.yb a {
     background-position: -96px 10px;
 }
+/**************************/
