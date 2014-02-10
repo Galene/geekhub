@@ -106,13 +106,13 @@ pre {
 
 
 /* ------------------ Fonts ------------------ */
-
+/*
 body,
 #site-slogan,
 .ui-widget,
 .comment-form label {
   font-family: Georgia, "Times New Roman", Times, serif;
-}
+}*/
 #header,
 #footer-wrapper,
 #skip-link,
@@ -330,7 +330,7 @@ ul.tips {
     display: block;
     height: 71px;
     text-indent: -2000px;
-    width: 167px;
+    width: 130px;
 }
 h1#site-name {
   margin: 0;
@@ -488,7 +488,7 @@ h1#site-name {
     height: 42px;
     margin: 34px 0 31px;
     overflow: visible;
-    width: 471px;
+    width: 498px;
 }
 #main-menu-links {
   font-size: 0.929em;
@@ -829,8 +829,8 @@ ul.links {
   line-height: 1.2;
 }
 .sidebar .block .content {
-  font-size: 0.914em;
-  line-height: 1.4;
+/*  font-size: 0.914em;*/
+  line-height: 1.2;
 }
 .sidebar tbody {
   border: none;
@@ -982,7 +982,7 @@ ul.links {
   text-decoration: none;
 }
 #footer {
-  letter-spacing: 0.2px;
+  letter-spacing: 0px;
   margin-top: 30px;
   border-top: 1px solid #555;
   border-color: rgba(255, 255, 255, 0.15);
@@ -1025,7 +1025,7 @@ ul.links {
 
 .tabs {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
 }
 .tabs ul.primary {
   padding: 0 3px;
@@ -1806,7 +1806,7 @@ div.admin-panel .description {
     padding: 40px 0 0;
 
 }
-/*************Copyright***********/
+/************* Copyright & Footer ***********/
 .region-footer-thirdcolumn {
     color: #A7C3CF;
     float: left;
@@ -1890,7 +1890,7 @@ div.admin-panel .description {
     float: none;
 }
 
-/***** follow ****/
+/***** follow contact ****/
 .field-name-field-follow .field-items ul {
     overflow: hidden;
     padding: 0 0 0 176px;
@@ -1935,10 +1935,6 @@ overflow: hidden;
 position: relative;
 width: 382px;
     float: left;
-}
-
-.field-name-field-questions li{
-
 }
 /*************** front social-share********/
 #triptych h2{
@@ -2025,7 +2021,9 @@ width: 382px;
 }
 
 /************ main teaser ****************/
-
+#content .node-teaser {
+    position:relative;
+}
 #content .node-teaser h2{
     float: right;
     width: 180px;
@@ -2042,13 +2040,13 @@ width: 382px;
     text-align: left;
     line-height: 27px;
 }
-#content .node-teaser .field-name-field-photo{
+#content .node-teaser .field-name-field-photo {
     height: 100px; /* Высота блока */
     width: 110px;
     float: left;
     padding: 0 5px 30px;
-}
 
+}
 #content .node-teaser .field-name-field-photo img{
     position: absolute;
     top: 5px;
@@ -2058,7 +2056,7 @@ width: 382px;
     color: #39525A;
     font-size: 13px;
     line-height: 18px;
-    margin: 13px 12px 0 0;
+    margin: 13px 12px 0 10px;
 }
 .link-wrapper .node-readmore {
     color: #EA2678;
@@ -2066,4 +2064,190 @@ width: 382px;
     padding: 10px 0 0 115px;
     text-align: left;
     text-decoration: underline;
+}
+/************** Details ******************/
+/************* Side bar ******************/
+.sidebar .region-sidebar-first .block-menu{
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    padding: 0 40px 0 0;
+    margin:0;
+}
+
+.sidebar .block-menu h2{
+    border-bottom: 1px solid #D2DCE1;
+    color: #4C7687;
+    font-family: "Trebuchet MS";
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 4px;
+    line-height: 18px;
+    padding: 0 0 8px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 2;
+}
+.sidebar .block-menu ul,
+.sidebar .block-menu .content{
+    padding: 0;
+    margin:0;
+}
+.sidebar .block-menu ul.menu li.first{
+    display: none;
+}
+
+.sidebar .block-menu ul.menu li{
+    border-bottom: 1px dotted #D2DCE1;
+    list-style: none outside none;
+}
+.sidebar .block-menu ul.menu li a{
+    display: block;
+    padding: 7px 0 7px 8px;
+}
+a:link, a:visited {
+    color: #E11D5D;
+    text-decoration: none;
+}
+ul.menu li a:hover, ul.menu li a.active{
+    color: #3191B8;
+    cursor: pointer;
+}
+/************ details **************/
+body.node-type-details h1#page-title{
+    color: #EA2778;
+    font-family: "Trebuchet MS";
+    font-size: 24px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    border:none;
+}
+.node-details .field-name-body,
+.node-details .field-name-field-photo,
+.node-details .field-name-field-theachers,
+.node-details .field-name-field-questions,{
+    display:block;
+    float:left;
+}
+.field-name-field-reg .field-label,
+.field-name-field-photo .field-label,
+.field-name-field-about .field-label,
+.field-name-field-office{
+    display:none;
+}
+
+.node-type-details .field-name-field-photo{
+
+}
+.node-type-details .field-items img {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    padding: 0;
+    float: right;
+}
+.node-type-details .field-name-body{
+    width: 550px;
+    float:left;
+}
+.profile .field-name-field-photo{
+    position:relative;
+}
+.profile .field-name-field-photo img{
+    float: left;
+    position:relative;
+}
+body.node-type-details .field-name-field-theachers .field-label,
+body.node-type-details .field-name-field-questions .field-label{
+    border-bottom: 1px solid #D2DCE1;
+    clear: both;
+    color: #4C7687;
+    font-family: "Trebuchet MS";
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 4px;
+    line-height: 18px;
+    padding: 0 0 8px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 2;
+}
+.field-name-field-questions li{
+
+}
+body.node-type-details .field-name-field-questions .field-items{
+    overflow: hidden;
+    padding: 25px 0 0;
+    float: none;
+}
+body.node-type-details .field-name-field-questions li {
+    background: url("/sites/default/files/question-li.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    list-style: none outside none;
+    overflow: hidden;
+    padding: 0 0 15px 30px;
+
+}
+.field-name-field-reg a{
+    background: url("/sites/default/files/register-button.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+    display: block;
+    font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+    font-size: 28px;
+    height: 56px;
+    margin: 20px auto 50px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    text-indent: 400px;
+    width: 310px;
+    z-index: 2;
+}
+.field-name-field-reg a:hover{
+    background-position: 0 -56px;
+}
+.field-name-field-reg a:active{
+    background-position: 0 -112px;
+}
+/************** region-header ******************/
+.region-header{
+    float: left;
+    height: 42px;
+    margin: 40px -8px 0 0;
+    overflow: hidden;
+}
+.without-secondary-menu .region-header {
+    margin-top: 35px;
+}
+.region-header ul.links li {
+    float: left;
+    height: 42px;
+    padding: 0 4px;
+    width: 24px;
+}
+.region-header li a {
+    background: url("/sites/default/files/icons_social.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #396375;
+    display: block;
+    height: 42px;
+    text-indent: -400px;
+    width: 24px;
+}
+.region-header li a:hover,
+.region-header li a.active,
+.region-header li.active a {
+    background: url("/sites/default/files/icons_social_hover.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.region-header li.fb a{
+    background-position: 0 10px;
+}
+.region-header li.vk a {
+    background-position: -32px 10px;
+}
+.region-header li.tw a {
+    background-position: -64px 10px;
+}
+.region-header li.yb a {
+    background-position: -96px 10px;
 }
