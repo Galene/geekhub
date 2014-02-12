@@ -553,7 +553,7 @@ function hook_views_data_alter(&$data) {
  *       root.
  *     - type: Each plugin can specify a type parameter to group certain
  *       plugins together. For example all row plugins related to feeds are
- *       grouped together, because a rss style plugin only accepts feed row
+ *       grouped together, because a modrss style plugin only accepts feed row
  *       plugins.
  *
  *   - Used by display plugins:
@@ -735,9 +735,9 @@ function hook_views_default_views() {
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Front page feed';
   $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['style_plugin'] = 'rss';
+  $handler->display->display_options['style_plugin'] = 'modrss';
   $handler->display->display_options['row_plugin'] = 'node_rss';
-  $handler->display->display_options['path'] = 'rss.xml';
+  $handler->display->display_options['path'] = 'modrss.xml';
   $handler->display->display_options['displays'] = array(
     'default' => 'default',
     'page' => 'page',

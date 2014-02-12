@@ -12,7 +12,7 @@
  *   The rendered list of items for the feed.
  */
 function aggregator_page_last() {
-  drupal_add_feed('aggregator/rss', variable_get('site_name', 'Drupal') . ' ' . t('aggregator'));
+  drupal_add_feed('aggregator/modrss', variable_get('site_name', 'Drupal') . ' ' . t('aggregator'));
 
   $items = aggregator_feed_items_load('sum');
 
@@ -66,7 +66,7 @@ function aggregator_page_source_form($form, $form_state, $feed) {
  *   The rendered list of items for the feed.
  */
 function aggregator_page_category($category) {
-  drupal_add_feed('aggregator/rss/' . $category['cid'], variable_get('site_name', 'Drupal') . ' ' . t('aggregator - @title', array('@title' => $category['title'])));
+  drupal_add_feed('aggregator/modrss/' . $category['cid'], variable_get('site_name', 'Drupal') . ' ' . t('aggregator - @title', array('@title' => $category['title'])));
 
   // It is safe to include the cid in the query because it's loaded from the
   // database by aggregator_category_load.
@@ -434,7 +434,7 @@ function theme_aggregator_page_rss($variables) {
   $feeds = $variables['feeds'];
   $category = $variables['category'];
 
-  drupal_add_http_header('Content-Type', 'application/rss+xml; charset=utf-8');
+  drupal_add_http_header('Content-Type', 'application/modrss+xml; charset=utf-8');
 
   $items = '';
   $feed_length = variable_get('feed_item_length', 'fulltext');
@@ -459,9 +459,9 @@ function theme_aggregator_page_rss($variables) {
   $description = isset($category) ? t('@site_name - aggregated feeds in category @title', array('@site_name' => $site_name, '@title' => $category->title)) : t('@site_name - aggregated feeds', array('@site_name' => $site_name));
 
   $output  = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n";
-  $output .= "<rss version=\"2.0\">\n";
+  $output .= "<modrss version=\"2.0\">\n";
   $output .= format_rss_channel(t('@site_name aggregator', array('@site_name' => $site_name)), $url, $description, $items);
-  $output .= "</rss>\n";
+  $output .= "</modrss>\n";
 
   print $output;
 }

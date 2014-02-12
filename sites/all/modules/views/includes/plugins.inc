@@ -173,7 +173,7 @@ function views_views_plugins() {
         'uses options' => TRUE,
         'help topic' => 'style-summary-unformatted',
       ),
-      'rss' => array(
+      'modrss' => array(
         'title' => t('RSS Feed'),
         'help' => t('Generates an RSS feed from a view.'),
         'handler' => 'views_plugin_style_rss',
@@ -181,7 +181,7 @@ function views_views_plugins() {
         'uses row plugin' => TRUE,
         'uses options' => TRUE,
         'type' => 'feed',
-        'help topic' => 'style-rss',
+        'help topic' => 'style-modrss',
       ),
     ),
     'row' => array(

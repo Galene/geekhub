@@ -89,7 +89,7 @@ function hook_rdf_mapping() {
  */
 function hook_rdf_namespaces() {
   return array(
-    'content'  => 'http://purl.org/rss/1.0/modules/content/',
+    'content'  => 'http://purl.org/modrss/1.0/modules/content/',
     'dc'       => 'http://purl.org/dc/terms/',
     'foaf'     => 'http://xmlns.com/foaf/0.1/',
     'og'       => 'http://ogp.me/ns#',

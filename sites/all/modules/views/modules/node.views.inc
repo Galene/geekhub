@@ -681,7 +681,7 @@ function node_views_plugins() {
         'base' => array('node'), // only works with 'node' as base.
         'uses options' => TRUE,
         'type' => 'feed',
-        'help topic' => 'style-node-rss',
+        'help topic' => 'style-node-modrss',
       ),
     ),
     'argument validator' => array(

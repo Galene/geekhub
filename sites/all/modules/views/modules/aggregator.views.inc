@@ -399,7 +399,7 @@ function aggregator_views_plugins() {
         'base' => array('aggregator_item'), // only works with 'node' as base.
         'uses options' => TRUE,
         'type' => 'feed',
-        'help topic' => 'style-aggregator-rss',
+        'help topic' => 'style-aggregator-modrss',
       ),
     ),
   );

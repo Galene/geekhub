@@ -118,7 +118,7 @@ class views_plugin_row_comment_rss extends views_plugin_row {
 
     // The comment gets built and modules add to or modify
     // $comment->rss_elements and $comment->rss_namespaces.
-    $build = comment_view($comment, $this->nodes[$comment->nid], 'rss');
+    $build = comment_view($comment, $this->nodes[$comment->nid], 'modrss');
     unset($build['#theme']);
 
     if (!empty($comment->rss_namespaces)) {

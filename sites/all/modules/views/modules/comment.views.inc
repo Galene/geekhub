@@ -629,7 +629,7 @@ function comment_views_plugins() {
         'base' => array('comment'), // only works with 'comment' as base.
         'uses options' => TRUE,
         'type' => 'feed',
-        'help topic' => 'style-comment-rss',
+        'help topic' => 'style-comment-modrss',
       ),
     ),
   );

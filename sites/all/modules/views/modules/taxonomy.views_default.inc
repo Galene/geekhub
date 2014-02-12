@@ -78,7 +78,7 @@ function taxonomy_views_default_views() {
   $handler = $view->new_display('feed', 'Feed', 'feed');
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = 15;
-  $handler->display->display_options['style_plugin'] = 'rss';
+  $handler->display->display_options['style_plugin'] = 'modrss';
   $handler->display->display_options['row_plugin'] = 'node_rss';
   $handler->display->display_options['path'] = 'taxonomy/term/%/%/feed';
   $handler->display->display_options['displays'] = array(

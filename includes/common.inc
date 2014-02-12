@@ -373,7 +373,7 @@ function drupal_add_feed($url = NULL, $title = '') {
 
     drupal_add_html_head_link(array(
       'rel' => 'alternate',
-      'type' => 'application/rss+xml',
+      'type' => 'application/modrss+xml',
       'title' => $title,
       // Force the URL to be absolute, for consistency with other <link> tags
       // output by Drupal.
@@ -4432,7 +4432,7 @@ function drupal_get_js($scope = 'header', $javascript = NULL, $skip_alter = FALS
  * callback function and each value an array of arguments. For example:
  * @code
  * $build['#attached']['drupal_add_http_header'] = array(
- *   array('Content-Type', 'application/rss+xml; charset=utf-8'),
+ *   array('Content-Type', 'application/modrss+xml; charset=utf-8'),
  * );
  * @endcode
  *

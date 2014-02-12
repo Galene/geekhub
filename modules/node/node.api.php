@@ -808,7 +808,7 @@ function hook_node_submit($node, $form, &$form_state) {
  * will be called after hook_view(). The structure of $node->content is a
  * renderable array as expected by drupal_render().
  *
- * When $view_mode is 'rss', modules can also add extra RSS elements and
+ * When $view_mode is 'modrss', modules can also add extra RSS elements and
  * namespaces to $node->rss_elements and $node->rss_namespaces respectively for
  * the RSS item generated for this node.
  * For details on how this is used, see node_feed().

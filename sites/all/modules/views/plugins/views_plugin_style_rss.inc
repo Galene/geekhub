@@ -34,7 +34,7 @@ class views_plugin_style_rss extends views_plugin_style {
       $this->view->feed_icon .= theme('feed_icon', array('url' => $url, 'title' => $title));
       drupal_add_html_head_link(array(
         'rel' => 'alternate',
-        'type' => 'application/rss+xml',
+        'type' => 'application/modrss+xml',
         'title' => $title,
         'href' => $url
       ));

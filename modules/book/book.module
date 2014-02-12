@@ -891,7 +891,7 @@ function book_node_view($node, $view_mode) {
     }
   }
 
-  if ($view_mode != 'rss') {
+  if ($view_mode != 'modrss') {
     book_node_view_link($node, $view_mode);
   }
 }

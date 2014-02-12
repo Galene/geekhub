@@ -212,7 +212,7 @@ function views_test_views_default_views() {
   $handler = $view->new_display('feed', 'Feed', 'feed_1');
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['style_plugin'] = 'rss';
+  $handler->display->display_options['style_plugin'] = 'modrss';
   $handler->display->display_options['row_plugin'] = 'node_rss';
   $handler->display->display_options['path'] = 'test_feed_http_headers_caching';
 

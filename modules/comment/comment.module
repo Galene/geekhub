@@ -616,7 +616,7 @@ function comment_node_view($node, $view_mode) {
   $links = array();
 
   if ($node->comment != COMMENT_NODE_HIDDEN) {
-    if ($view_mode == 'rss') {
+    if ($view_mode == 'modrss') {
       // Add a comments RSS element which is a URL to the comments of this node.
       $node->rss_elements[] = array(
         'key' => 'comments',

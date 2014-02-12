@@ -1773,7 +1773,7 @@ class views_plugin_display extends views_plugin {
           $form['link_display'] = array(
             '#type' => 'radios',
             '#options' => $options,
-            '#description' => t("Which display to use to get this display's path for things like summary links, rss feed links, more links, etc."),
+            '#description' => t("Which display to use to get this display's path for things like summary links, modrss feed links, more links, etc."),
             '#default_value' => $this->get_option('link_display'),
           );
         }

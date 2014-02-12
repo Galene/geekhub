@@ -178,7 +178,7 @@ function hook_hook_info_alter(&$hooks) {
  *     modes let entities be displayed differently depending on the context.
  *     For instance, a node can be displayed differently on its own page
  *     ('full' mode), on the home page or taxonomy listings ('teaser' mode), or
- *     in an RSS feed ('rss' mode). Modules taking part in the display of the
+ *     in an RSS feed ('modrss' mode). Modules taking part in the display of the
  *     entity (notably the Field API) can adjust their behavior depending on
  *     the requested view mode. An additional 'default' view mode is available
  *     for all entity types. This view mode is not intended for actual entity
@@ -230,7 +230,7 @@ function hook_entity_info() {
           'label' => t('Teaser'),
           'custom settings' => TRUE,
         ),
-        'rss' => array(
+        'modrss' => array(
           'label' => t('RSS'),
           'custom settings' => FALSE,
         ),
@@ -4247,8 +4247,8 @@ function hook_url_inbound_alter(&$path, $original_path, $path_language) {
  */
 function hook_url_outbound_alter(&$path, &$options, $original_path) {
   // Use an external RSS feed rather than the Drupal one.
-  if ($path == 'rss.xml') {
-    $path = 'http://example.com/rss.xml';
+  if ($path == 'modrss.xml') {
+    $path = 'http://example.com/modrss.xml';
     $options['external'] = TRUE;
   }
 

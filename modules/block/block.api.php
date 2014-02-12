@@ -223,7 +223,7 @@ function hook_block_view($delta = '') {
       $block['subject'] = t('Syndicate');
       $block['content'] = array(
         '#theme' => 'feed_icon',
-        '#url' => 'rss.xml',
+        '#url' => 'modrss.xml',
         '#title' => t('Syndicate'),
       );
       break;

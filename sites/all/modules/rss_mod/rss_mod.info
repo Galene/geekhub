@@ -1,0 +1,9 @@
+name = RSS Module
+description = RSS feeds.
+package = RSS
+core = 7.x
+files[]= rss_mod.module
+stylesheets[all][] = main.css
+version = «7.x-1.0»
+configure = admin/config/content/rss_mod
+project = "RSS module"
