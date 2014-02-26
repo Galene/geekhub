@@ -1,0 +1,37 @@
+<?php
+/****В этом хуке мы описываем используемые блоки.*****/
+function modrss_block_info() {
+    $blocks['modrss'] = array(
+        'info'  => t('RSS Feeds2'),
+        'cache' => DRUPAL_CACHE_PER_ROLE, // по умолчанию
+    );
+    return $blocks;
+}
+
+/**
+* Реализация hook_menu()
+*/
+function modrss_menu() {
+    $items['teachers/rss.xml'] = array(
+        'title' => 'RSS feed of teachers pages',
+        'page callback' => 'modrss_teachers',
+        'access arguments' => array('access content'),
+        'type' => MENU_NORMAL_ITEM,
+    );
+    return $items;
+}
+
+/**
+* Menu callback
+*/
+function modrss_teachers() {
+    $result = db_query_range("
+      SELECT nid FROM {node}
+      WHERE type = 'teachers' AND status = 1
+      ORDER BY created DESC
+      ", 0, 10);
+    while ($row = db_fetch_object($result)) {
+      $nids[] = $row->nid;
+    }
+    node_feed($nids);
+}

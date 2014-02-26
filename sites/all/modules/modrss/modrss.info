@@ -4,6 +4,3 @@ package = RSS
 core = 7.x
 files[]= modrss.module
 
-version = «7.x-1.0»
-configure = admin/config/content/rss_mod
-project = "RSS module"
